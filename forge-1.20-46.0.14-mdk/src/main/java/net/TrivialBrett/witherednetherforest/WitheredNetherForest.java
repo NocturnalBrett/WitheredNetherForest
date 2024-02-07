@@ -1,4 +1,4 @@
-package net.TrivialBrett.mccourse;
+package net.TrivialBrett.witherednetherforest;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,15 +15,15 @@ import org.slf4j.Logger;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(MCCourseMod.MOD_ID)
-public class MCCourseMod
+@Mod(WitheredNetherForest.MOD_ID)
+public class WitheredNetherForest
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "mccourse";
+    public static final String MOD_ID = "witherednetherforest";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public MCCourseMod()
+    public WitheredNetherForest()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
