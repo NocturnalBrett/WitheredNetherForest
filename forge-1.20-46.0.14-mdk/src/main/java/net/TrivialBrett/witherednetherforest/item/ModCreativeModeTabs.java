@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -14,12 +15,16 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WitheredNetherForest.MOD_ID);
 
-    /*
+
     public static final RegistryObject<CreativeModeTab> COURSE_TAB = CREATIVE_MODE_TABS.register("course_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
-                    .title(Component.translatable("creativetab.course_tab")).displayItems((displayParameters, output) -> {
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.NETHERRACK))
+                    .title(Component.translatable("creativetab.withered_forest")).displayItems((displayParameters, output) -> {
 
 
+                        output.accept(ModBlocks.WITHERED_NYLIUM.get());
+                        //output.accept(ModBlocks.WITHERED_NETHER_SPROUTS.get());
+
+                        /*
                         output.accept(ModItems.ALEXANDRITE.get());
                         output.accept(ModItems.RAW_ALEXANDRITE.get());
                         output.accept(ModItems.METAL_DETECTOR.get());
@@ -35,9 +40,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.NETHER_ALEXANDRITE_ORE.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
 
+                         */
+
 }).build());
 
-     */
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

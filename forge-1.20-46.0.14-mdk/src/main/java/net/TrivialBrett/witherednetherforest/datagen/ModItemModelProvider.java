@@ -1,6 +1,7 @@
 package net.TrivialBrett.witherednetherforest.datagen;
 
 import net.TrivialBrett.witherednetherforest.WitheredNetherForest;
+import net.TrivialBrett.witherednetherforest.block.ModBlocks;
 import net.TrivialBrett.witherednetherforest.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -17,6 +18,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+
         /*
         simpleItem(ModItems.ALEXANDRITE);
         simpleItem(ModItems.RAW_ALEXANDRITE);

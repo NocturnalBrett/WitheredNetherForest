@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 
@@ -17,6 +18,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
+
+        blockWithItem(ModBlocks.WITHERED_NYLIUM);
+        blockWithItem(ModBlocks.WITHERED_NETHER_SPROUTS);
+
         /*
         blockWithItem(WitheredNetherForest.ALEXANDRITE_BLOCK);
         blockWithItem(WitheredNetherForest.RAW_ALEXANDRITE_BLOCK);

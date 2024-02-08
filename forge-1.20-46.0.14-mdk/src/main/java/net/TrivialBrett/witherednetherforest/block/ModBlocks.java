@@ -25,6 +25,18 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, WitheredNetherForest.MOD_ID);
 
+
+    public static final RegistryObject<Block> WITHERED_NYLIUM = registerBlock("withered_nylium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_NYLIUM)));
+
+
+    public static final RegistryObject<Block> WITHERED_NETHER_SPROUTS = registerBlock("withered_nether_sprouts",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_SPROUTS /* . requiresCorrectToolForDrops() */  )));
+
+
+
+
+
     /*
     public static final RegistryObject<Block> ALEXANDRITE_BLOCK = registerBlock("alexandrite_block",
             () -> new Block(BlockBehaviour.Properties.
